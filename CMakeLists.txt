@@ -15,7 +15,7 @@ PKG_CHECK_MODULES(GTK3 REQUIRED gtk+-3.0)
 
 add_executable(${PROJECT_NAME} 
      main.c
-
+     gui.c
 )
 
 include_directories(
