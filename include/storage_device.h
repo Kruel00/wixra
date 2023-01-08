@@ -81,5 +81,12 @@ typedef struct storage_device_list_s
 }storage_device_list_t;
 
 void init_storage_device(storage_device_t * const device);
-void scan_device(storage_device_list_t * const device_list);
+int scan_device(storage_device_list_t * const device_list);
 int alloc_storage_device_list(storage_device_list_t *const device_list, size_t partition_list_size);
+int get_device_capacity_bytes(char const * const device, unsigned long long int * const size_in_bytes, unsigned long long int * const total_sectors, unsigned long long int * const sector_size);
+int detect_storage_nvme_short_name(storage_device_t * const device);
+int detect_storage_serial_with_usb_adapter(storage_device_t * const device);
+int detect_storage_device_type(storage_device_t * const device);
+void set_device_state(storage_device_t *const device);
+void set_dev_gb(storage_device_t *const device);
+int detect_storage_serial_with_usb_adapter(storage_device_t * const device);

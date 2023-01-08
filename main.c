@@ -24,8 +24,9 @@ int main(int argc, char **argv){
         printf("Arg: %s\n",argv[1]);
         storage_device_list_t dev_list;
         scan_device(&dev_list);
+        printf("Name: %s\n",dev_list.device[2].name);
     }
-    
+
     return 0;
 }
 
