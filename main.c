@@ -9,6 +9,7 @@
 //***************
 #include "main.h"
 #include "gui.h"
+#include "storage_device.h"
 
 #define DEBUG 1
 
@@ -20,7 +21,9 @@ int main(int argc, char **argv){
         load_gui(argc, argv);
     }
     else{
-        printf("Argumento Revicido: %s\n",argv[1]);
+        printf("Arg: %s\n",argv[1]);
+        storage_device_list_t dev_list;
+        scan_device(&dev_list);
     }
     
     return 0;

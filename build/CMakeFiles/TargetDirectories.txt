@@ -1,3 +1,0 @@
-/media/jcastorena/files/dev/C/wixra/build/CMakeFiles/rebuild_cache.dir
-/media/jcastorena/files/dev/C/wixra/build/CMakeFiles/edit_cache.dir
-/media/jcastorena/files/dev/C/wixra/build/CMakeFiles/wixra.dir
